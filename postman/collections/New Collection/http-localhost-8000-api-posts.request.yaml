@@ -1,0 +1,24 @@
+$kind: http-request
+name: http://localhost:8000/api/posts
+url: http://localhost:8000/api/posts
+method: GET
+body:
+  type: formdata
+  content:
+    - type: file
+      key: image
+      src:
+        - /C:/Users/FX/Pictures/download.jpg
+      description: Gambar
+      disabled: false
+    - type: text
+      key: title
+      value: Belajar Rest API Laravel 10
+      description: Buat judul
+      disabled: false
+    - type: text
+      key: content
+      value: Belajar Rest API Laravel 10
+      description: Buat Content nya
+      disabled: false
+order: 1778483666832
